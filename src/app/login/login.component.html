@@ -1,0 +1,15 @@
+<div>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+    <div>
+      <label for="account">账号</label>
+      <input id="account" type="text" formControlName="account" />
+    </div>
+
+    <div>
+      <label for="password">密码</label>
+      <input id="password" type="password" formControlName="password" />
+    </div>
+
+    <button type="submit">登录</button>
+  </form>
+</div>
