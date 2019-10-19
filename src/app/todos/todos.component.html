@@ -15,10 +15,21 @@
   </button>
 </div>
 
-<ul>
+<ul class="todos">
   <li *ngFor="let todo of todos; index as i">
-    <input type="checkbox" (change)="modify(todo)" [checked]="todo.complete" />
-    <span>{{ todo.todo }}</span>
-    <button (click)="delete(todo._id, i)">×</button>
+    <input
+      class="complete"
+      type="checkbox"
+      (change)="modify(todo)"
+      [checked]="todo.complete"
+    />
+    <span
+      class="todo"
+      [ngStyle]="{
+        'text-decoration-line': todo.complete ? 'line-through' : 'none'
+      }"
+      >{{ todo.todo }}</span
+    >
+    <button class="delete" (click)="delete(todo._id, i)">×</button>
   </li>
 </ul>

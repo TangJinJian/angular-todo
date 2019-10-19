@@ -1,15 +1,17 @@
-<div>
+<h2>待办事项登录</h2>
+
+<div style="width: 200px;">
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
-    <div>
+    <div class="form-item">
       <label for="account">账号</label>
       <input id="account" type="text" formControlName="account" />
     </div>
 
-    <div>
+    <div class="form-item">
       <label for="password">密码</label>
       <input id="password" type="password" formControlName="password" />
     </div>
 
-    <button type="submit">登录</button>
+    <button style="width: 100%;" type="submit">登录</button>
   </form>
 </div>

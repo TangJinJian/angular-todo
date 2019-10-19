@@ -1,0 +1,39 @@
+body {
+  color: #333333;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  margin: 2em;
+}
+
+/* 按钮 */
+button {
+  border: none;
+  padding: 4px 16px;
+  background-color: #1976d2;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* 输入框 */
+input {
+  border-radius: 2px;
+  padding: 0 7px;
+  border: 1px solid #bdbdbd;
+  color: #333333;
+  height: 25px;
+  box-sizing: border-box;
+}
+
+/* 标题 */
+h2 {
+  font-weight: normal;
+}

@@ -1,0 +1,30 @@
+.todos {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todos li {
+  background-color: #eeeeee;
+  width: 216px;
+  margin: 0 0 7px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2px;
+  position: relative;
+}
+
+.todos li:hover {
+  background-color: #dddddd;
+  left: .1em;
+}
+
+.complete {
+  width: 25px;
+}
+
+.todo {
+  line-height: 31px;
+  text-align: left;
+  flex-grow: 1;
+  padding: 0 7px;
+}
