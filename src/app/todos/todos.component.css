@@ -1,3 +1,7 @@
+.add-todo-input {
+  width: 157px;
+}
+
 .todos {
   list-style-type: none;
   padding: 0;
@@ -15,7 +19,7 @@
 
 .todos li:hover {
   background-color: #dddddd;
-  left: .1em;
+  left: 0.1em;
 }
 
 .complete {
