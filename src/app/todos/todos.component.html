@@ -1,0 +1,24 @@
+<h2>我的待办事项</h2>
+
+<div>
+  <input
+    placeholder="新的待办事项"
+    (keyup.enter)="addButton.click()"
+    [(ngModel)]="newTodo"
+  />
+  <button
+    #addButton
+    (click)="addTodo(newTodo); newTodo = ''"
+    [disabled]="!newTodo"
+  >
+    添加
+  </button>
+</div>
+
+<ul>
+  <li *ngFor="let todo of todos; index as i">
+    <input type="checkbox" (change)="modify(todo)" [checked]="todo.complete" />
+    <span>{{ todo.todo }}</span>
+    <button (click)="delete(todo._id, i)">×</button>
+  </li>
+</ul>

@@ -1,13 +1,13 @@
 export interface Token {
-  readonly token: string;
+  token: string;
 }
 
 export interface Todo {
-  readonly _id: string;
-  readonly complete: boolean;
-  readonly todo: string;
+  _id: string;
+  complete: boolean;
+  todo: string;
 }
 
 export interface CreatedTodo {
-  readonly _id: string;
+  _id: string;
 }

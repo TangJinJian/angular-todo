@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodosComponent } from './todos/todos.component';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: TodoListComponent
+    component: TodosComponent
   }
 ];
 
