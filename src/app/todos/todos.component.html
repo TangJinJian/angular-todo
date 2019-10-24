@@ -1,36 +1,36 @@
-<h2>我的待办事项</h2>
-
 <div>
+  <h2>清单</h2>
   <input
     class="add-todo-input"
-    placeholder="新的待办事项"
+    placeholder="请输入新的待办事项"
     (keyup.enter)="addButton.click()"
     [(ngModel)]="newTodo"
   />
   <button
     #addButton
+    class="add-todo-button"
     (click)="addTodo(newTodo); newTodo = ''"
     [disabled]="!newTodo"
   >
     添加
   </button>
-</div>
 
-<ul class="todos">
-  <li *ngFor="let todo of todos; index as i">
-    <input
-      class="complete"
-      type="checkbox"
-      (change)="modify(todo)"
-      [checked]="todo.complete"
-    />
-    <span
-      class="todo"
-      [ngStyle]="{
-        'text-decoration-line': todo.complete ? 'line-through' : 'none'
-      }"
-      >{{ todo.todo }}</span
-    >
-    <button class="delete" (click)="delete(todo._id, i)">×</button>
-  </li>
-</ul>
+  <ul class="todos">
+    <li *ngFor="let todo of todos; index as i">
+      <input
+        class="complete"
+        type="checkbox"
+        (change)="modify(todo)"
+        [checked]="todo.complete"
+      />
+      <span
+        class="todo"
+        [ngStyle]="{
+          'text-decoration-line': todo.complete ? 'line-through' : 'none'
+        }"
+        >{{ todo.todo }}</span
+      >
+      <button class="delete" (click)="delete(todo._id, i)">×</button>
+    </li>
+  </ul>
+</div>

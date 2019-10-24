@@ -1,34 +1,48 @@
+div {
+  padding: 0.3rem 0.5rem;
+}
+
 .add-todo-input {
-  width: 157px;
+  width: 2rem;
+}
+
+.add-todo-button {
+  width: 0.6rem;
 }
 
 .todos {
-  list-style-type: none;
-  padding: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .todos li {
-  background-color: #eeeeee;
-  width: 216px;
-  margin: 0 0 7px;
   display: flex;
   justify-content: space-between;
-  border-radius: 2px;
-  position: relative;
+  align-items: center;
+  height: 0.42rem;
+  border-radius: 1rem;
+  padding: 0 0.14rem;
 }
 
 .todos li:hover {
-  background-color: #dddddd;
-  left: 0.1em;
+  background-color: #eeeeee;
 }
 
 .complete {
-  width: 25px;
+  box-sizing: border-box;
+  margin: 0;
+  width: 0.16rem;
+  height: 0.16rem;
 }
 
 .todo {
-  line-height: 31px;
+  padding-left: 0.14rem;
   text-align: left;
   flex-grow: 1;
-  padding: 0 7px;
+}
+
+.delete {
+  width: 0.32rem;
+  height: 0.32rem;
+  padding: 0;
 }
