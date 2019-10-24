@@ -1,17 +1,19 @@
 body {
   color: #333333;
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 14px;
-  margin: 2em;
+  font-size: 0.14rem;
+  margin: 0;
 }
 
 /* 按钮 */
 button {
   border: none;
-  padding: 4px 16px;
-  background-color: #1976d2;
+  padding: 0.1rem 0.16rem;
+  background: linear-gradient(to left, #1976d2, #4d94db);
   color: #ffffff;
-  border-radius: 2px;
+  border-radius: 1rem;
+  font-size: 0.12rem;
+  box-shadow: 0 0.02rem 0.04rem 0.01rem #7ca9d6;
 }
 
 button:hover {
@@ -23,17 +25,26 @@ button:disabled {
   cursor: auto;
 }
 
-/* 输入框 */
-input {
-  border-radius: 2px;
-  padding: 0 7px;
-  border: 1px solid #bdbdbd;
-  color: #333333;
-  height: 25px;
-  box-sizing: border-box;
+button:focus {
+  outline: none;
 }
 
-/* 标题 */
-h2 {
-  font-weight: normal;
+/* 输入框 */
+input {
+  padding: 0.1rem 0;
+  border: 0.01rem solid #bdbdbd;
+  color: #333333;
+  height: 0.25rem;
+  border: none;
+  font-size: 0.14rem;
+  border-bottom: 0.01rem solid #eeeeee;
+  margin-bottom: 0.14rem;
+}
+
+input::placeholder {
+  color: #cfcfcf;
+}
+
+input:focus {
+  outline: none;
 }

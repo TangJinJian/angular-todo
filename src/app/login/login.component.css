@@ -1,5 +1,25 @@
-.form-item {
+h2 {
+  margin: 0;
+  font-size: 0.42rem;
+  font-weight: bold;
+}
+
+h3 {
+  margin: 0 0 0.8rem;
+  font-size: 0.13rem;
+  font-weight: inherit;
+  color: #898989;
+}
+
+div {
+  padding: 0.8rem 0.5rem;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 14px;
+}
+
+button {
+  margin-top: 0.1rem;
 }

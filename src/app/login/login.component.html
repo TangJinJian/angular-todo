@@ -1,17 +1,11 @@
-<h2>待办事项登录</h2>
-
-<div style="width: 200px;">
+<div>
+  <h2>Todo</h2>
+  <h3>一款 Angular 8 、 Nest.js 6 开发的待办事项</h3>
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
-    <div class="form-item">
-      <label for="account">账号</label>
-      <input id="account" type="text" formControlName="account" />
-    </div>
+    <input id="account" type="text" placeholder="请输入账号" formControlName="account" />
 
-    <div class="form-item">
-      <label for="password">密码</label>
-      <input id="password" type="password" formControlName="password" />
-    </div>
+    <input id="password" type="password" placeholder="请输入密码" formControlName="password" />
 
-    <button style="width: 100%;" type="submit">登录</button>
+    <button type="submit">登录</button>
   </form>
 </div>

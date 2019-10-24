@@ -1,13 +1,28 @@
-<!doctype html>
-<html lang="zh">
+<!DOCTYPE html>
+
+<script>
+  function calcHTMLFontSize({ benchmark = 3.6, max = 740, min = 360 } = {}) {
+    width_ = window.innerWidth > max ? max : window.innerWidth;
+    width_ = width_ < min ? min : width_;
+    let fontSize = Math.floor(width_ / benchmark);
+    try {
+      document.body.parentNode.style.fontSize = `${fontSize}px`;
+    } catch (e) {
+      document.write(`<html style="font-size: ${fontSize}px;">`);
+    }
+    return fontSize;
+  }
+  calcHTMLFontSize();
+  window.addEventListener('resize', calcHTMLFontSize);
+</script>
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>AngularTodo</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
   <app-root></app-root>
 </body>
-</html>
